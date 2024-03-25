@@ -12,8 +12,8 @@
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
-  position: fixed;
-  overflow: auto;
+  /* position: fixed; */
+  overflow: auto !important;
 }
 
 /* Glassmorphism Area */
@@ -34,11 +34,12 @@
 }
 
 .socials{
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 7px;
   line-height:0%;
   text-decoration: none;
+  font-size: 2rem;
 
   display: flex;
   align-items: center;
@@ -48,4 +49,22 @@
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7.6px);
   -webkit-backdrop-filter: blur(7.6px);
+}
+
+/* Adjustments */
+.border-end{
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+@media (min-width:767px) {
+  .border-end{
+    border-color: rgba(255, 255, 255, 1) !important;
+
+  }
+
+  .socials{
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
+  }
 }
